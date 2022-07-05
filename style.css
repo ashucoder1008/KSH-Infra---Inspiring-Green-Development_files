@@ -1,0 +1,952 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    transition: all 0.3s linear;
+}
+
+/* general rules for website  */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --back-color: #f5f5f5;
+    --btn-color: #c44dff;
+    --heading-color: #220066;
+    --hover-color: #ff571a;
+}
+
+h1 {
+    font-size: 4.5rem;
+    color: var(--hover-color);
+
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #313131;
+}
+
+p {
+    font-size: 2.4rem;
+    color: #313131;
+}
+
+a {
+    font-weight: 600;
+    font-size: 1.9rem;
+    color: var(--hover-color);
+
+}
+
+.page-link {
+    display: block;
+    width: 15rem;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    border: none;
+    background-color: var(--hover-color);
+    color: #fff;
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+    border-radius: 0 2rem 0rem 2rem;
+    cursor: pointer;
+}
+
+.page-link:hover {
+    letter-spacing: 0.1rem;
+    background-color: #ff8a5f;
+    color: #000;
+}
+
+/* home page css rules start here  */
+
+/* --------------header css rules start------------- */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-right: 3rem;
+    position: relative;
+}
+
+.navbar li a:hover {
+    transition: all 0.3s linear;
+    color: #ff1428;
+}
+
+.resourse {
+    position: relative;
+    padding-top: -0.5rem;
+}
+
+.resourse i {
+    margin-left: 1rem;
+    color: #f50818;
+}
+
+.resourse:hover i {
+    color: var(--hover-color);
+}
+
+.sub-nav {
+    position: absolute;
+    top: 2.3rem;
+    left: 0;
+    padding: 0rem 0.5rem 0.5rem 0;
+    display: none;
+}
+
+.sub-nav:hover {
+    transition: all 0.3s linear;
+    box-shadow: 1rem 1rem 1rem var(--back-color);
+}
+
+.sub-nav li a {
+    padding: 0.5rem 0;
+    display: block;
+}
+
+.resourse:hover .sub-nav {
+    display: block;
+}
+
+#close-menu {
+    font-size: 2rem;
+    display: none;
+}
+
+#open-menu {
+    font-size: 2rem;
+    display: none;
+}
+
+/* --------------header css rules end------------- */
+
+
+
+/* -------------- hero rules start------------- */
+
+#hero-section {
+    width: 100%;
+    height: 87vh;
+    animation: slide-image 9s infinite linear;
+}
+
+@keyframes slide-image {
+    0% {
+        background-image: url("https://kshinfra.com/wp-content/uploads/2020/02/sustainability-by-ksh.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    50% {
+        background-image: url('https://kshinfra.com/wp-content/uploads/2020/02/Industrial-park-in-chakan-India.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background-image: url('https://kshinfra.com/wp-content/uploads/2020/02/KSH-Infra-Pune-Chakan-Industrial-park.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/* -------------- hero rules end------------- */
+
+
+
+
+
+/* -------------- main section  rules start------------- */
+
+.main-part {
+    width: 85%;
+    margin: 2rem auto;
+}
+
+.introduction h1 {
+    text-align: center;
+    margin: 1.5rem;
+
+}
+
+.introduction h2 {
+    text-align: center;
+    margin: 1.5rem;
+
+}
+
+.introduction p {
+    text-align: justify;
+    margin: 1.5rem;
+
+}
+
+#chakana-park {
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.chakana-park {
+    width: 30rem;
+    background-color: #f5f5f5;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 0 4rem 0rem 4rem;
+}
+
+.chakana-park:hover {
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.5);
+
+}
+
+.chakana-park h2 {
+    margin: 0.3rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: var(--hover-color);
+    color: #fff;
+    font-weight: 400;
+    border-radius: 0 2rem 0rem 2rem;
+}
+
+.chakana-park img {
+    width: 100%;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.chakana-park img:hover {
+    transform: scale(0.98);
+}
+
+.chakana-park p {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+
+.chakana-park a {
+    display: block;
+    width: 15rem;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    border: none;
+    background-color: var(--hover-color);
+    color: #fff;
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+    border-radius: 0 2rem 0rem 2rem;
+    cursor: pointer;
+}
+
+.chakana-park a:hover {
+    letter-spacing: 0.1rem;
+    background-color: #ff8a5f;
+    color: #000;
+}
+
+/* -------------- main section  rules end------------- */
+
+/* intro section css start  */
+.first-intro {
+    width: 100%;
+    background-image: url('https://kshinfra.com/wp-content/uploads/2019/06/about-ksh-group-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    overflow: hidden;
+}
+
+.intro-rapper {
+    width: 60%;
+}
+
+.intro-rapper h1 {
+    text-align: center;
+    padding: 1.5rem 0;
+    font-weight: 400;
+}
+
+.intro-rapper h2 {
+    text-align: left;
+    padding-left: 3rem;
+
+}
+
+.intro-rapper p {
+    text-align: justify;
+    margin: 1.5rem 0;
+    padding-left: 3rem;
+
+}
+
+.secont-intro {
+    width: 85%;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.secont-intro h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.secont-intro h2 {
+    font-size: 2.6rem;
+    text-align: justify;
+    margin: 2.5rem 0;
+}
+
+.secont-intro img {
+    width: 100%;
+}
+
+/* intro section css end  */
+
+
+/* fact section css start  */
+.interesting-fact {
+    width: 100%;
+    background-color: #f5f5f5;
+    margin: 3rem 0;
+    padding: 2rem 0;
+}
+
+.interesting-fact h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.fact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.fact {
+    border-radius: 50%;
+    width: 22rem;
+    height: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--hover-color);
+    position: relative;
+}
+.fact:hover{
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+
+}
+
+.fact-wrapper p {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+
+}
+
+.count {
+    display: block;
+    margin-bottom: 5rem;
+    font-size: 7rem;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: all 4s linear;
+
+
+}
+
+/* fact section css end  */
+/* our company section css start  */
+
+
+.our-company {
+    width: 85%;
+    margin: 3rem auto;
+}
+
+.our-company h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.our-company p {
+    text-align: justify;
+    padding: 0 2rem;
+}
+
+.company {
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.company-group {
+    width: 30%;
+    height: 38rem;
+    border-radius: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 0 4rem 0rem 4rem;
+}
+
+.company-group:hover {
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.company-group:hover.company-group h2 {
+    text-shadow: 0.01rem 0.01rem 0.10rem rgba(0, 0, 0, 0.5);
+
+}
+
+
+.company-image {
+    width: 90%;
+    display: block;
+    border-radius: 50%;
+    background-color: var(--hover-color);
+    margin: 2rem auto;
+}
+
+.company-group h2 {
+    text-align: center;
+    font-weight: 600;
+    color: var(--hover-color);
+    margin: 8rem auto;
+    border-bottom: 0.3rem solid rgb(0, 8, 255);
+}
+
+.first-image {
+    width: 27rem;
+    height: 19rem;
+
+}
+
+.second-image {
+    width: 27rem;
+    height: 19rem;
+}
+
+.third-image {
+    width: 27rem;
+    height: 19rem;
+}
+
+/* our company section css end  */
+/* contact section css start  */
+#contact {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.contact-wrapper {
+    width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+.contact {
+    margin: 3rem 0;
+    width: 30%;
+    height: 45rem;
+    padding: 1.5rem 0;
+    background-color: #fff;
+    border-radius: 0 5rem 0 5rem;
+}
+
+.contact img {
+    display: block;
+    margin: 0.5rem auto;
+    width: 9rem;
+}
+
+.contact p {
+    width: 80%;
+    text-align: left;
+    margin: 3rem auto;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.05rem;
+}
+
+.contact-address h2 {
+    text-align: center;
+    font-weight: 400;
+    border-bottom: 0.3rem solid var(--hover-color);
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+}
+
+.contact-address address {
+    font-size: 2rem;
+    margin: 1rem 1rem;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-weight: 400;
+    border-bottom: 0.3rem solid var(--hover-color);
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+
+}
+
+.contact-form input {
+    width: 80%;
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 3rem auto;
+    display: block;
+}
+
+.contact-form button {
+    font-size: 2rem;
+    padding: 1rem 2.5rem;
+    display: block;
+    margin: 0.5rem auto;
+    border-radius: 0 1.5rem 0 1.5rem;
+    border: none;
+    background-color: var(--hover-color);
+    color: #fff;
+}
+
+.contact-form button:hover {
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.2rem;
+    color: #000;
+}
+
+/* contact section css end  */
+/* footer section css start  */
+footer {
+    width: 100%;
+    padding: 0rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+    margin-top: -2rem;
+    background-color: var(--hover-color);
+}
+
+footer p {
+    margin: 2rem 0;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.social-media {
+    margin: 0 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+.social-media i {
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: rgb(50, 50, 209);
+    cursor: pointer;
+
+}
+
+.social-media i:hover {
+    box-shadow: 0.2rem 0.2rem 0.7rem rgba(0, 0, 0, 0.5);
+}
+
+.social-media strong {
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* footer section css end  */
+
+/* home page css rules end here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quary start for mideam devicex here  */
+
+@media (max-width: 999px) {
+    header {
+        /* border: 1px solid #000; */
+        z-index: 2;
+        box-shadow: 1rem 1rem 3rem var(--back-color);
+    }
+
+    .resourse i {
+        color: var(--hover-color);
+    }
+
+    .navbar {
+        width: 95%;
+        height: 50vh;
+        background-color: white;
+        margin-left: 2rem;
+        position: absolute;
+        top: -90vh;
+        left: 0rem;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        justify-content: space-evenly;
+        border-radius: 1rem;
+        box-shadow: 1rem 1rem 1rem var(--back-color);
+        transition: all 0.7s linear;
+
+    }
+
+    .navbar.active {
+        top: 7.9vh;
+    }
+
+    .navbar li a {
+
+        font-size: 3.3rem;
+    }
+
+    .resourse {
+        margin-bottom: 5rem;
+    }
+
+    .sub-nav {
+        top: 4.5rem;
+        left: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    #close-menu {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        font-size: 6rem;
+        color: var(--hover-color);
+        display: block;
+
+    }
+
+    #open-menu {
+        position: absolute;
+        top: 2rem;
+        right: 2.4rem;
+        font-size: 5rem;
+        color: var(--hover-color);
+        display: block;
+
+    }
+
+    /* hero section start  */
+
+    #hero-section {
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+    }
+
+    /* hero section end  */
+
+    /* intro section start  */
+    .introduction h1 {
+        font-size: 4rem;
+        text-align: left;
+    }
+
+    .introduction h2 {
+        font-size: 2.8rem;
+        text-align: left;
+    }
+
+    .introduction p {
+        font-size: 2.4rem;
+        text-align: justify;
+    }
+
+    /* intro section end  */
+
+    /* main css rule start here  */
+
+    #chakana-park {
+        flex-direction: column;
+    }
+
+    .chakana-park {
+        width: 100%;
+        /* border: 5px solid #000; */
+    }
+
+    .chakana-park img {
+        border-radius: 0 5rem 0 5rem;
+    }
+
+    /* main css rule end here  */
+    /* intro css rule start here  */
+    .first-intro {
+        width: 100%;
+        /* background-size: cover; */
+        background-position: 70%;
+    }
+
+    .intro-rapper {
+        width: 70%;
+        /* height: inherit; */
+
+    }
+
+    .intro-rapper h1 {
+        text-align: left;
+        padding-left: 3rem;
+        font-size: 3rem;
+    }
+
+    .intro-rapper h2 {
+        font-size: 2.5rem;
+    }
+
+    .intro-rapper p {
+        font-size: 2rem;
+    }
+
+    /* intro css rule end here  */
+    .company-group {
+        width: 100%;
+        /* border: 1px solid #000; */
+    }
+
+    .contact-wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+    }
+    .fact-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .contact {
+        width: 90%;
+        margin-bottom: 1rem;
+
+        /* border: 1px solid #000; */
+    }
+    footer{
+        flex-direction: column-reverse;
+    }
+    footer p{
+        font-size: 3rem;
+
+    }
+    .social-media {
+        margin: 2rem;
+        width: 100%;
+    }
+}
+
+
+/* media quary end for mideam devicex here  */
+
+
+
+/* media quary start for small devicex here  */
+
+@media (max-width: 599px) {
+    .navbar {
+        width: 100%;
+        height: 60rem;
+        padding-bottom: 0%;
+        position: absolute;
+        top: -100vh;
+        left: -19px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        border-radius: 1rem;
+        box-shadow: 1rem 1rem 1rem var(--back-color);
+        transition: all 0.7s linear;
+    }
+
+    .navbar.active {
+        top: 9.9vh;
+        left: -19px;
+    }
+
+    .resourse {
+        margin-bottom: 7rem;
+    }
+
+    .sub-nav {
+        top: 3.5rem;
+        left: 0rem;
+    }
+
+    /* hero section start  */
+
+    #hero-section {
+        width: 100%;
+        height: 22vh;
+        background-size: cover;
+    }
+
+    /* hero section end  */
+    /* intro section start  */
+
+    .introduction h1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .introduction h2 {
+        font-size: 2.2rem;
+        text-align: left;
+    }
+
+    .introduction p {
+        font-size: 1.8rem;
+        text-align: justify;
+    }
+
+    /* intro section end  */
+    /* intro css rule start here  */
+    .first-intro {
+        width: 100%;
+        height: 80vh;
+        border: 1px solid #000;
+        background-position: 50%;
+        background-size: cover;
+    }
+
+    .intro-rapper {
+        width: 100%;
+        height: 80vh;
+        padding: 0;
+
+    }
+
+    .intro-rapper h1 {
+        text-align: left;
+        font-size: 2.7rem;
+    }
+
+    .intro-rapper h2 {
+        font-size: 2.3rem;
+        padding: 0.2rem 1rem;
+    }
+
+    .intro-rapper p {
+        font-size: 2rem;
+        padding: 0.2rem 1rem;
+    }
+
+    /* intro css rule end here  */
+
+}
+
+
+/* media quary end for small devicex here  */

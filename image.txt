@@ -1,0 +1,9 @@
+<1>-- logo--  https://kshinfra.com/wp-content/uploads/2020/02/KSH_Logo_new_web.png
+
+<2>-- hero1-- https://kshinfra.com/wp-content/uploads/2020/02/sustainability-by-ksh.jpg
+
+<2>-- hero2--https://kshinfra.com/wp-content/uploads/2020/02/Industrial-park-in-chakan-India.jpg
+
+<2>-- hero3--https://kshinfra.com/wp-content/uploads/2020/02/KSH-Infra-Pune-Chakan-Industrial-park.jpg
+
+10.>-- https://kshinfra.com/wp-content/uploads/2019/06/about-ksh-group-1.jpg
